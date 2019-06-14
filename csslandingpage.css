@@ -36,22 +36,28 @@ body{
 }
 
 #showcase p{
-  font-size: 20px;
+  font-size: 50px;
 }
 
 #showcase .button{
-  font-size: 18px;
+  font-size: 28px;
   text-decoration: none;
   color: #686687;
   border:#768767 1px solid;
-  padding: 10px 20px;
+  padding: 5px 5px;
   border-radius: 10px;
   margin-top: 10px;
+  position:relative;
+  right: -50px;
+  bottom: 180px;
 }
 
 #showcase .button:hover{
   background: #978897;
   color: #fff
+  position:relative;
+  right: -50px;
+  bottom: 180px;
 
 }
 
@@ -83,46 +89,60 @@ section-c div{
   background: #f9f9f9;}
 
   .foo{
-      background: linear-gradient(#91a4cc, #f1cccd);
+background: linear-gradient(#91a4cc, #f1cccd);
       position:relative;
-      top: 120px;
+      top: 10px;
       right: 50px;
       width: 690px;
-      height: 600px;
-height: 100vh;
+font-size: 1000px;
+height: 1000px;
 color: white;
     }
 .goo{
 
-  position:relative;
-  top: 0px;
-  right: -50px;
-  width: 690px;
-  height: 600px;
-
-color: black;
 
 
-
-}
-.desc{
-  font: 20px;
-  font-weight: bold;
-  position:relative;
-  top: -100px;
-  right: 400px;
-  width: 690px;
-  bottom: 500px;
-  line-height: 0;
-}
-
-.desc2{
-  font-family: Helvetica;
-  font-weight: bolder;
-  font: 20px;
   position:relative;
   top: -100px;
   right: 328px;
   width: 690px;
   bottom: 500px;
+
+
+}
+.desc{
+  font: 160px;
+  font-size: 100px;
+  font-weight: bold;
+  position:relative;
+  top: -100px;
+  right: 310px;
+  width: 690px;
+  bottom: 500px;
+  line-height: 1;
+
+}
+
+.desc2{
+  font-family: Helvetica;
+  font-weight: bolder;
+
+
+  position:relative;
+  top: -100px;
+  right: 188px;
+  width: 690px;
+  bottom: 500px;
+  line-height: 1;
+  text-align: left;
+
+}
+.back{
+  background: linear-gradient(#91a4cc, #f1cccd);
+  position:relative;
+  top: 10px;
+  right: 50px;
+  width: 6900px;
+
+height: 1000px;
 }
