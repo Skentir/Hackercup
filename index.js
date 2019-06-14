@@ -40,6 +40,11 @@ app.post('/newuser', function(req, res) {
       type: 'student'
     });
     user.save();
+    var student = new Student({
+      user: user._id,
+      birthDate: req.body.birthdate
+    });
+    student.save();
     res.redirect('/');
   }
 });
