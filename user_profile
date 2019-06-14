@@ -42,11 +42,19 @@
 
   </head>
   <body>
-    <h1 id="header">Create your account</h1>
-    <p>
-      <label class="question">What's your name? </label><br>
-      <input type="text" id="result">
-    </p>
+    <div class="jumbotron text-center">
+      <h1 id="header">Create your account</h1>
+    </div>
+    <form>
+      <h2>
+        <label class="question">What's your name? </label><br>
+        <input type="text" id="result">
+        <label class="question">What's your age? </label><br>
+        <input type="text" id="result">
+        <label class="question">Upload photos</label><br>
+
+      </h2>
+    </form>
 
   </body>
 </html>
