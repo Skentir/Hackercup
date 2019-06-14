@@ -1,0 +1,23 @@
+{
+  "name": "hackercup",
+  "version": "1.0.0",
+  "description": "Name of Business: Remotely",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skentir/Hackercup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Skentir/Hackercup/issues"
+  },
+  "homepage": "https://github.com/Skentir/Hackercup#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
