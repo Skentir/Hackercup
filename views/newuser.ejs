@@ -56,7 +56,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="/"><img src="images/logo.png" /></a>
+          <a class="navbar-brand" href="/"><img src="images/logo.png" height="20rem" /></a>
         </div>
         <ul class="nav navbar-nav">
           <li class="active"><a href="/newuser">Profile</a></li>
@@ -76,17 +76,17 @@
       <form class="form-horizontal" action="/newuser" method="post">
         <div class="form-group">
           <h3>
-            <label class="control-label col-sm-4" required for="email"> What's your name? </label>
+            <label class="control-label col-sm-4" required for="name"> What's your name? </label>
             <div class="col-xs-6">
-              <input type="text" name="name" class="form-control" placeholder="Enter your fullname" minlength="5" maxlength="100"> <br>
+              <input type="text" name="name" id="name" class="form-control" placeholder="Enter your fullname" minlength="5" maxlength="100"> <br>
             </div>
           </h3>
         </div>
         <div class="form-group">
           <h3>
-            <label class="control-label col-sm-4" for="email"> What's your email? </label>
+            <label class="control-label col-sm-4" required for="email"> What's your email? </label>
             <div class="col-xs-6">
-              <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email"> <br>
+              <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email"> <br>
             </div>
           </h3>
         </div>
@@ -94,7 +94,7 @@
           <h3>
             <label class="control-label col-sm-4" required for="pwd"> Set a password </label>
             <div class="col-xs-6">
-              <input type="password" name="password" class="form-control" placeholder="Sample: HackerCup123!"> <br>
+              <input type="password" name="password" id="pwd" class="form-control" placeholder="Sample: HackerCup123!"> <br>
             </div>
           </h3>
         </div>
@@ -102,15 +102,15 @@
           <h3>
             <label class="control-label col-sm-4" required for="date"> When were you born? </label>
             <div class="col-xs-6">
-              <input type="date" name="birthdate" class="form-control" required placeholder="Enter a valid email"> <br>
+              <input type="date" name="birthdate" id="date" class="form-control" required placeholder="Enter a valid email"> <br>
             </div>
           </h3>
         </div>
         <div class="form-group">
           <h3>
-            <label class="control-label col-sm-2" required for="fullname"> Upload a profile photo </label>
-            <div class="col-xs-4">
-              <input type="file" name="image" class="form-control" alt="Attach Photo" src="https://img.icons8.com/windows/10/000000/picture.png"> <br>
+            <label class="control-label col-sm-4" required for="photo"> Upload a profile photo </label>
+            <div class="col-xs-6">
+              <input type="file" name="image" id="photo" class="form-control" alt="Attach Photo" src="https://img.icons8.com/windows/10/000000/picture.png"> <br>
             </div>
           </h3>
         </div>
