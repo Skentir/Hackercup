@@ -1,6 +1,7 @@
+
 body {
   font-family: "Roboto";
-  background: #f1cccd;
+  background: white;
   background-attachment: fixed;
   position: center;
   text-align: center;
@@ -13,12 +14,19 @@ body {
   margin-top: 50px;
   margin-bottom: 30px;
 }
+
+#feedback_img {
+  display: inline-block;
+  width: 100%;
+}
+
 .textbox {
   width: 30%;
   height: 5%;
   font-family: "Roboto:300", sans-serif;
   font-size: 35px;
 }
+
 .btn {
   margin-top: 15px;
   font-size: 18px;
@@ -30,7 +38,6 @@ input {
   color: #8662d7;
 }
 .form-horizontal {
-  background: #f1cccd;
   text-align: center;
   margin: 0 auto;
 }
@@ -40,4 +47,14 @@ input {
 }
 label {
   color: #6824a3;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
