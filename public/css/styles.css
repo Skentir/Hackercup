@@ -1,6 +1,6 @@
 body {
   font-family: "Roboto";
-  background: white;
+  background: blue;
   background-attachment: fixed;
   position: center;
   text-align: center;
@@ -8,7 +8,7 @@ body {
 
 #header {
   font-family: "Roboto", serif;
-  color: black;
+  color: red;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 30px;
