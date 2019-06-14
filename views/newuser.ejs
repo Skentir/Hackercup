@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Remotely</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        font-family: "Roboto";
+        background: white;
+        background-attachment: fixed;
+        position: center;
+        text-align: center;
+      }
+
+      #header {
+        font-family: "Roboto", serif;
+        color: black;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+      }
+      .textbox {
+        width: 30%;
+        height: 5%;
+        font-family: "Roboto:300", sans-serif;
+        font-size: 35px;
+      }
+      .btn {
+        margin-top: 15px;
+        font-size: 18px;
+        font-family: "Roboto", serif;
+      }
+      input {
+        font-size: 24px;
+        font-family: sans-serif;
+        color: #8662d7;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <h1 id="header">Create your account</h1>
+    </div>
+    <form class="form-horizontal" action="/newuser" method="post">
+      <div class="form-group">
+        <h3>
+          <label class="control-label col-sm-2" for="name"> What's your name? </label><br>
+          <div class="col-xs-4">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Enter your fullname"> <br>
+          </div>
+        </h3>
+      </div>
+        <div class="form-group">
+          <h3>
+            <label class="control-label col-sm-2" for="email"> What's your email? </label><br>
+            <div class="col-xs-4">
+              <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email"> <br>
+            </div>
+          </h3>
+        </div>
+      <div class="form-group">
+        <h3>
+          <label class="control-label col-sm-2" for="pwd"> Set a password </label><br>
+          <div class="col-xs-4">
+            <input type="password" name="password" class="form-control" id="pwd" placeholder="Sample: HackerCup123!"> <br>
+          </div>
+        </h3>
+      </div>
+      <div class="form-group">
+        <h3>
+          <label class="control-label col-sm-2" for="date"> When were you born? </label><br>
+          <div class="col-xs-4">
+            <input type="date" name="birthdate" class="form-control" id="date" placeholder="Enter a valid date"> <br>
+          </div>
+        </h3>
+      </div>
+      <div class="form-group">
+        <h3>
+          <label class="control-label col-sm-2" for="fullname"> Upload a profile photo </label><br>
+          <div class="col-xs-4">
+            <input type="file" class="form-control" id="result" placeholder="Enter a valid image"> <br>
+          </div>
+        </h3>
+      </div>
+      <button type="submit" class+"btn btn-default"> Submit</button>
+    </form>
+  </body>
+
+  <p id="bottom">
+    <a href="https://icons8.com" id="icon">Icon pack by Icons8</a><br> Crafted with <img src="https://png.icons8.com/heart-outline/dusk/18/000000"> by Froshies
+  </p>
+  <script src="js/bootstrap-datetimepicker.min.js"></script>
+  <script>
+  $(function () {
+     $('#calendar').datepicker({
+          inline: true,
+          sideBySide: true
+     });
+  });
+  </script>
+  <!-- PLEASE MAKE SCRIPT TO RESET FORM
+  <script>
+    $("#reset-date").click(function() {
+      $("#result").val(" ");
+      $("#calendar")
+        .val(" ")
+        .datepicker("update");
+    });
+  </script>
+  --->
+  <script>
+  function calculateAge(Date myDate){
+    var currentTime = new Date();
+    var currentYear = currentTime.getFullYear();
+    var age = currentYear - birthdate.getFullYear();
+    var i = currentTime.getMonth() - birthdate.getMonth();
+
+    if (i < 0 || (i === 0 && currentTime < birthdate.getDate())) {
+        age--;
+    }
+
+    return age;
+  }
+
+  $("#enter").click(function() {
+    var Temp = document.getElementById("calendar");
+    var myDate = new Date(Temp.value);
+    var age = calculateAge(myDate);
+
+    if(age >= 16 && age < 60)
+  });
+  </script>
+</html>
