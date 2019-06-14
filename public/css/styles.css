@@ -1,0 +1,42 @@
+body {
+  font-family: "Roboto";
+  background: white;
+  background-attachment: fixed;
+  position: center;
+  text-align: center;
+}
+
+#header {
+  font-family: "Roboto", serif;
+  color: black;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.textbox {
+  width: 30%;
+  height: 5%;
+  font-family: "Roboto:300", sans-serif;
+  font-size: 35px;
+}
+.btn {
+  margin-top: 15px;
+  font-size: 18px;
+  font-family: "Roboto", serif;
+}
+input {
+  font-size: 24px;
+  font-family: sans-serif;
+  color: #8662d7;
+}
+.form-horizontal {
+  text-align: center;
+  margin: 0 auto;
+}
+.form-group {
+  text-align: center;
+  margin: 0 auto;
+}
+label {
+  color: #6824a3;
+}
