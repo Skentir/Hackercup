@@ -12,11 +12,16 @@ const port = 3000;
 
 app.set('view engine', 'ejs');
 
+app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.get('/newuser', function(req, res) {
   res.render('newuser');
+});
+
+app.get('/newbiz', function(req, res) {
+  res.render('newbiz');
 });
 
 app.post('/newuser', function(req, res) {
