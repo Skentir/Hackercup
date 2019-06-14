@@ -49,9 +49,14 @@
       <h2>
         <label class="question">What's your name? </label><br>
         <input type="text" id="result">
-        <label class="question">What's your age? </label><br>
+        <label class="question">Set a password </label><br>
         <input type="text" id="result">
-        <label class="question">Upload photos</label><br>
+        <label class="question">Email </label><br>
+        <input type="email" id="result">
+        <label class="number">What's your age? </label><br>
+        <input type="date" id="result">
+        <label class="question">Upload profile photo</label><br>
+        <input type="image">
 
       </h2>
     </form>
