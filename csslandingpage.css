@@ -1,0 +1,104 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  margin:0;
+  font-family:Arial,"Helvetica Neue",Helvetica,sans-serif;
+  font-size: 20px;
+  colo:#876698;
+  line-height:1.6;
+
+}
+
+#showcase{
+  background-image::url('../img/showcase.jpg');
+  background-size::cover;
+  background-position: center;
+  height: 100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+  padding:0 20px;
+
+}
+
+#showcase h1{
+  font-size:500px;
+  line-height: 1.2;
+  position: relative;
+  right:500px;
+  bottom: 490px;
+
+}
+
+#showcase p{
+  font-size: 20px;
+}
+
+#showcase .button{
+  font-size: 18px;
+  text-decoration: none;
+  color: #686687;
+  border:#768767 1px solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#showcase .button:hover{
+  background: #978897;
+  color: #fff
+
+}
+
+#section-a{
+  padding:20px;
+  background: :#776776;
+  color:#fff;
+  text-align: :center;
+}
+
+#section-c{
+  padding:20px;
+  background: blue;
+  text-align: :center;
+}
+
+section-c{
+  display: flex;
+}
+section-c div{
+  padding: :20px;
+}
+#section-c .box1, #section-c .box3{
+  background: :#987678;
+  color:#fff;
+}
+
+#section-c .box2{
+  background: #f9f9f9;}
+
+  .foo{
+      background: linear-gradient(#91a4cc, #f1cccd);
+      position:relative;
+      top: 10;
+      right: 500;
+      width: 600px;
+      height: 600px;
+height: 100vh;
+    }
+.ex{
+  background: #00000a;
+position:relative;
+top: 0px;
+right: 500px;
+width: 600px;
+height: 600px;
+  margin: 0 auto;
+font-size: 100px;
+height: 100vh;
+
+}
