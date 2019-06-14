@@ -19,7 +19,8 @@
   "homepage": "https://github.com/Skentir/Hackercup#readme",
   "dependencies": {
     "ejs": "^2.6.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.5.15"
   },
   "devDependencies": {}
 }
