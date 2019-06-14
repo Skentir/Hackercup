@@ -15,9 +15,17 @@ body {
   margin-bottom: 30px;
 }
 
+
 #feedback_img {
   display: inline-block;
   width: 100%;
+}
+
+#panel_feedback {
+  top: 100px;
+  right:50px;
+  position: absolute;
+  background: #91a4cc;
 }
 
 .textbox {
