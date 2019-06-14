@@ -9,14 +9,42 @@
     <style type="text/css">
       body {
         font-family: "Roboto";
-        background: linear-gradient(#6c5bdb, #);
+        background: white;
+        background-attachment: fixed;
+        position: center;
+        text-align: center;
+      }
+
+      #header {
+        font-family: "Roboto", serif;
+        color: black;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+      }
+      .textbox {
+        width: 30%;
+        height: 5%;
+        font-family: "Roboto:300", sans-serif;
+        font-size: 35px;
+      }
+      .btn {
+        margin-top: 15px;
+        font-size: 18px;
+        font-family: "Roboto", serif;
+      }
+      input {
+        font-size: 24px;
+        font-family: sans-serif;
+        color: #8662d7;
       }
     </style>
 
   </head>
   <body>
-    <h1>Remotely</h1>
-    <p>This will be the description for the website</p>
+    <h1 id="header">Create your account</h1>
+    <p>
+    </p>
 
   </body>
 </html>
