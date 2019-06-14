@@ -40,51 +40,78 @@
         font-family: sans-serif;
         color: #8662d7;
       }
+      .form-horizontal {
+        text-align: center;
+        margin: 0 auto;
+      }
+      .form-group {
+        text-align: center;
+        margin: 0 auto;
+      }
+      label {
+        color: #6824a3;
+      }
     </style>
 
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Remotely</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Profile</a></li>
+          <li><a href="#">Opportunities</a></li>
+          <li><a href="#">Page 3</a></li>
+        </ul>
+      </div>
+    </nav>
   </head>
+
   <body>
+
     <div class="jumbotron text-center">
       <h1 id="header">Create your account</h1>
     </div>
-    <form class="form-horizontal" action="/newuser" method="post">
+    <form class="form-horizontal" action="/action_page.php">
       <div class="form-group">
         <h3>
-          <label class="control-label col-sm-2" for="email"> What's your name? </label><br>
+          <label class="control-label col-sm-2" required for="email"> What's your name? </label>
           <div class="col-xs-4">
-            <input type="text" class="form-control" placeholder="Enter your fullname"> <br>
+            <input type="text" class="form-control" placeholder="Enter your fullname" minlength="5" maxlength="100"> <br>
           </div>
         </h3>
       </div>
       <div class="form-group">
         <h3>
-          <label class="control-label col-sm-2" for="pwd"> Set a password </label><br>
+          <label class="control-label col-sm-2" required for="pwd"> Set a password </label>
           <div class="col-xs-4">
-            <input type="text" class="form-control" placeholder="Sample: HackerCup123!"> <br>
+            <input type="password" class="form-control" placeholder="Sample: HackerCup123!"> <br>
           </div>
         </h3>
       </div>
       <div class="form-group">
         <h3>
-          <label class="control-label col-sm-2" for="date"> When were you born? </label><br>
+          <label class="control-label col-sm-2" required for="date"> When were you born? </label>
           <div class="col-xs-4">
-            <input type="date" class="form-control" placeholder="Enter a valid email"> <br>
+            <input type="date" class="form-control" required placeholder="Enter a valid email"> <br>
           </div>
         </h3>
       </div>
       <div class="form-group">
         <h3>
-          <label class="control-label col-sm-2" for="fullname"> Upload a profile photo </label><br>
+          <label class="control-label col-sm-2" required for="fullname"> Upload a profile photo </label>
           <div class="col-xs-4">
-            <input type="text" class="form-control" placeholder="Enter a valid email"> <br>
+            <input type="image" class="form-control" alt="Attach Photo" src="https://img.icons8.com/windows/10/000000/picture.png"> <br>
           </div>
         </h3>
       </div>
       <div class="checkbox">
-        <label><input type="checkbox"> Remember me</label>
+        <label class="control-label" required> <input type="checkbox"> Remember me</label>
       </div>
-      <button type="submit" class+"btn btn-default"> Submit</button>
+      <button type="submit" class="btn btn-default">Submit</button>
     </form>
+
   </body>
 
   <p id="bottom">
@@ -129,6 +156,7 @@
     var age = calculateAge(myDate);
 
     if(age >= 16 && age < 60)
+    else
   });
   </script>
 </html>
