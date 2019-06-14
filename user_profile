@@ -44,6 +44,8 @@
   <body>
     <h1 id="header">Create your account</h1>
     <p>
+      <label class="question">What's your name? </label><br>
+      <input type="text" id="result">
     </p>
 
   </body>
