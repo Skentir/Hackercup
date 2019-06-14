@@ -1,6 +1,6 @@
 body {
   font-family: "Roboto";
-  background: white;
+  background: #f1cccd;
   background-attachment: fixed;
   position: center;
   text-align: center;
@@ -30,6 +30,7 @@ input {
   color: #8662d7;
 }
 .form-horizontal {
+  background: #f1cccd;
   text-align: center;
   margin: 0 auto;
 }
