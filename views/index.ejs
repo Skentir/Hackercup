@@ -21,6 +21,14 @@
           <li><a href="/business">Opportunities</a></li>
           <li><a href="#">Page 3</a></li>
         </ul>
+        <ul class="nav navbar-nav navbar-right">
+        <% if (user) { %>
+          <li><a href="/profile"><%= user.name %></a></li>
+          <li><a href="/logout">Sign out</a></li>
+        <% } else { %>
+          <li><a href="/login">Sign in</a></li>
+        <% } %>
+        </ul>
       </div>
     </nav>
 

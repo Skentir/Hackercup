@@ -19,34 +19,18 @@
           <a class="navbar-brand" href="/"><img src="images/logo.png" height="20rem"></a>
         </div>
         <ul class="nav navbar-nav">
-          <li><a href="/newuser">Profile</a></li>
+          <li class="active"><a href="/newuser">Profile</a></li>
           <li><a href="/business">Opportunities</a></li>
           <li><a href="#">Page 3</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-        <% if (user) { %>
-          <li><a href="/profile"><%= user.name %></a></li>
-          <li><a href="/logout">Sign out</a></li>
-        <% } else { %>
-          <li><a href="/login">Sign in</a></li>
-        <% } %>
         </ul>
       </div>
     </nav>
 
     <div class="jumbotron text-center">
-      <h1 id="header" class="animated pulse delay-1s">Create your account</h1>
+      <h1 id="header" class="animated pulse delay-1s">Sign in to your account</h1>
     </div>
     <div class="container">
-      <form class="form-horizontal animated pulse delay-1s" action="/business" method="post">
-        <div class="form-group">
-          <h3>
-            <label class="control-label col-sm-4" required for="name"> What's your business name? </label>
-            <div class="col-xs-8">
-              <input type="text" name="name" id="name" class="form-control" placeholder="Enter your business name" minlength="5" maxlength="100"> <br>
-            </div>
-          </h3>
-        </div>
+      <form class="form-horizontal animated pulse delay-1s" action="/login" method="post">
         <div class="form-group">
           <h3>
             <label class="control-label col-sm-4" required for="email"> What's your email address? </label>
@@ -57,31 +41,15 @@
         </div>
         <div class="form-group">
           <h3>
-            <label class="control-label col-sm-4" required for="passwd"> Set a password </label>
+            <label class="control-label col-sm-4" required for="passwd"> What's your password? </label>
             <div class="col-xs-8">
-              <input type="password" name="password" id="passwd" class="form-control" placeholder="Sample: HackerCup123!"> <br>
+              <input type="password" name="password" id="passwd" class="form-control" placeholder="Enter your password"> <br>
             </div>
           </h3>
-        </div>
-        <div class="form-group">
-          <h3>
-            <label class="control-label col-sm-4" required for="logo"> Upload a logo </label>
-            <div class="col-xs-8">
-              <input type="file" name="image" id="logo" accept="image/*" class="form-control" alt="Attach Photo" src="https://img.icons8.com/windows/10/000000/picture.png"> <br>
-            </div>
-          </h3>
-        </div>
-        <div class="checkbox">
-          <label class="control-label" required> <input type="checkbox"> Remember me</label>
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
     </div>
 
   </body>
-
-  <p id="bottom">
-    <a href="https://icons8.com" id="icon">Icon pack by Icons8</a><br> Crafted with <img src="https://png.icons8.com/heart-outline/dusk/18/000000"> by Froshies
-  </p>
-  <script src="js/bootstrap-datetimepicker.min.js"></script>
 </html>
