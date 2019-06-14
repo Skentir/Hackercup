@@ -85,13 +85,26 @@ section-c div{
   .foo{
       background: linear-gradient(#91a4cc, #f1cccd);
       position:relative;
-      top: 10;
+      top: 10px;
       right: 50px;
       width: 690px;
       height: 600px;
 height: 100vh;
+color: black;
     }
+.goo{
 
+  position:relative;
+  top: 0px;
+  right: -50px;
+  width: 690px;
+  height: 600px;
+
+color: black;
+
+
+
+}
 .desc{
   font: 20px;
   position:relative;
