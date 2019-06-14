@@ -20,8 +20,8 @@ app.get('/newuser', function(req, res) {
   res.render('newuser');
 });
 
-app.get('/newbiz', function(req, res) {
-  res.render('newbiz');
+app.get('/business', function(req, res) {
+  res.render('business');
 });
 
 app.post('/newuser', function(req, res) {
