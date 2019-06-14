@@ -14,16 +14,19 @@ body {
   margin-top: 50px;
   margin-bottom: 30px;
 }
+
 #feedback_img {
   display: inline-block;
   width: 100%;
 }
+
 .textbox {
   width: 30%;
   height: 5%;
   font-family: "Roboto:300", sans-serif;
   font-size: 35px;
 }
+
 .btn {
   margin-top: 15px;
   font-size: 18px;
